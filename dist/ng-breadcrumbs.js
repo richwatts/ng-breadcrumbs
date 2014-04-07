@@ -47,8 +47,8 @@ angular
           return { path: route, param: param };
         };
 
-        if (pathElements[1] === '') {
-          delete pathElements[1];
+        if (pathElements[0] === '') { // First element in the array should be deleted
+          delete pathElements[0];
         }
 
         this.breadcrumbs = [];
